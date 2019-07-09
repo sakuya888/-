@@ -426,7 +426,7 @@ window.plugin.playerTracker.drawData = function() {
 
     var divIcon = L.divIcon({
       className: "labelClass",
-      html: "<span style='white-space:nowrap; text-shadow: 0 0 0.1em black, 0 0 0.1em black, 0 0 0.1em black,0 0 0.1em black,0 0 0.1em; color:" + (playerData.team === 'RESISTANCE' ? 'DeepSkyBlue' : 'LawnGreen') + ";'>" + plrname + "</span>"
+      html: "<span style='font-size: 14pt;white-space:nowrap; text-shadow: 0 0 0.1em black, 0 0 0.1em black, 0 0 0.1em black,0 0 0.1em black,0 0 0.1em; color:" + (playerData.team === 'RESISTANCE' ? 'DeepSkyBlue' : 'LawnGreen') + ";'>" + plrname + "</span>"
     });
     var mm = L.marker(gllfe(last), {icon: divIcon});
     mm.addTo(playerData.team === 'RESISTANCE' ? plugin.playerTracker.drawnTracesRes : plugin.playerTracker.drawnTracesEnl);
